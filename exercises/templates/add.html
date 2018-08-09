@@ -3,15 +3,20 @@
 <head>
     <title>Add a Student</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Add a Student</h1>
-    <form method="post">
+    <h1 id="maintitle">Add a Student</h1>
+    <form method="POST">
         <input type="text" name="student_name" placeholder="Your name">
         <br>
         <input type="text" name="student_year" placeholder="Your year">
         <br>
         <input type="submit" value="Submit">
     </form>
+    <br>
+    <br>
+    <button onclick="changeColor();">Click Me</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
